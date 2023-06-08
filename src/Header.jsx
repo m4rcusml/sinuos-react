@@ -1,8 +1,41 @@
+import './Header.css'
+
 const Header = () => {
+
+  function getResolucao() {
+    const resolucao = window.innerWidth
+    return resolucao
+  }
+
+  function abrirMenu() {
+    document.querySelector('#menu').classList.toggle('aberto')
+    if (document.querySelector('#menu').classList.contains('aberto')) {
+      if (getResolucao() > 768) {
+        document.querySelector('#root').style.gridTemplateColumns = '20vw 1fr'
+      }
+    } else {
+      if (getResolucao() > 768) {
+        document.querySelector('#root').style.gridTemplateColumns = '0 1fr'
+      }
+    }
+  }
+
   return (
-    <>
-      <h1>Header</h1>
-    </>
+    <header id="cabecalho">
+
+      <button id="menu-button" onClick={abrirMenu}>
+        <span className="material-symbols-outlined">
+          menu
+        </span>
+      </button>
+
+      <button id="account-button" className="clicado">
+        <span className="material-symbols-outlined">
+          account_circle
+        </span>
+      </button>
+
+    </header>
   )
 }
 

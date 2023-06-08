@@ -1,0 +1,39 @@
+#cabecalho {
+  z-index: 10;
+  grid-area: header;
+  min-height: 10vh;
+  padding: 0 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--cor04);
+  box-shadow: 0 2px 2vh #000000b3;
+}
+
+#cabecalho button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 200ms;
+}
+
+#cabecalho button:hover {
+  color: var(--cor01);
+}
+
+#cabecalho .material-symbols-outlined {
+  font-size: max(3.2rem, 3vw);
+  font-variation-settings: 'FILL' 1;
+}
+
+#cabecalho #links {
+  font-size: max(1.4rem, 1.2vw);
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}

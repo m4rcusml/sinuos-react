@@ -1,0 +1,33 @@
+.botoes-topo, 
+.botoes-fim {
+    width: 100%;
+    padding: 1vh 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1em;
+}
+
+.botoes-topo button, .botoes-fim button {
+    cursor: pointer;
+    background-color: var(--cor04);
+    border: none;
+    box-shadow: 0 0 5px var(--cor01);
+    outline: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botoes-topo button .material-symbols-outlined, 
+.botoes-fim button .material-symbols-outlined {
+    font-size: max(4.8rem, 2.8vw);
+    color: white;
+    transition: all 200ms;
+}
+
+.botoes-topo button:active .material-symbols-outlined, 
+.botoes-fim button:active .material-symbols-outlined {
+    color: black;
+}

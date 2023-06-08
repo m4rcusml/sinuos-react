@@ -1,0 +1,64 @@
+main {
+  grid-area: main;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+main::-webkit-scrollbar {
+  width: 1rem;
+}
+
+main::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+main::-webkit-scrollbar-thumb {
+  border-radius: calc(.8vw / 2);
+  border: .2vw solid white;
+  background-color: var(--cor01);
+}
+
+@media screen and (max-width:425px) {
+  #menu {
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    right: 0;
+    top: -100vh;
+    bottom: auto;
+    transition: none;
+  }
+
+  #menu * {
+    top: -100vh;
+    transition: none;
+  }
+
+  #menu.aberto {
+    top: 10vh;
+    transition: none;
+  }
+
+  #menu.aberto * {
+    top: 10vh;
+    transition: none;
+  }
+
+  #menu-lista .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #menu-lista .item.selecionado {
+    border: none;
+    font-weight: bold;
+  }
+
+  #rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+  }
+}

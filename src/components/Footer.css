@@ -1,0 +1,62 @@
+#rodape {
+  width: 95%;
+  margin: auto;
+  margin-top: 6vh;
+  position: relative;
+  padding: 1vh 0 0 0;
+  display: grid;
+  grid-template-areas:
+    "area1 area2"
+    "copyright copyright";
+  gap: 2vh 2vw;
+  justify-items: center;
+}
+
+#rodape::before {
+  content: '';
+  height: 1vh;
+  position: absolute;
+  top: -3vh;
+  left: 0;
+  right: 0;
+  border-radius: 1em;
+  background-color: var(--cor03);
+}
+
+#rodape div:nth-of-type(1) {
+  grid-area: area1;
+}
+
+#rodape div {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+#rodape div .titulo {
+  font-size: max(1.2rem, 1.2vw);
+}
+
+#rodape ul {
+  font-size: max(1rem, 1vw);
+  list-style: none;
+  color: gray;
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+}
+
+#rodape ul li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#copyright {
+  font-size: max(1.2rem, 1vw);
+  grid-area: copyright;
+  justify-self: stretch;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
