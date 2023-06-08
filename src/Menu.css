@@ -49,13 +49,12 @@
 }
 
 #menu-lista .item:hover {
-  color: var(--cor01);
-  border-left: solid 1vw;
+  border-left: solid 1vw white;
 }
 
 #menu-lista .item.selecionado {
   color: var(--cor01);
-  border-left: solid 2vw;
+  border-left: solid .5vw;
 }
 
 /* Btn reportar bugs*/
@@ -96,11 +95,22 @@
     bottom: 0;
     left: -90vw;
   }
+
   #menu.aberto {
     position: absolute;
     width: 90vw;
     top: 10vh;
     bottom: 0;
     left: 0;
+  }
+
+  #menu-lista .item:hover {
+    color: var(--cor01);
+    border-left: solid 1vw;
+  }
+
+  #menu-lista .item.selecionado {
+    color: var(--cor01);
+    border-left: solid 2vw;
   }
 }
