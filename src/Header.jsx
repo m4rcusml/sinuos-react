@@ -7,8 +7,9 @@ const Header = () => {
     return resolucao
   }
 
-  function abrirMenu() {
+  function abrirFecharMenu() {
     document.querySelector('#menu').classList.toggle('aberto')
+    document.querySelector('#menu').classList.toggle('fechado')
     if (document.querySelector('#menu').classList.contains('aberto')) {
       if (getResolucao() > 768) {
         document.querySelector('#root').style.gridTemplateColumns = '20vw 1fr'
@@ -23,7 +24,7 @@ const Header = () => {
   return (
     <header id="cabecalho">
 
-      <button id="menu-button" onClick={abrirMenu}>
+      <button id="menu-button" onClick={abrirFecharMenu}>
         <span className="material-symbols-outlined">
           menu
         </span>

@@ -10,7 +10,7 @@
   transition: all 200ms;
 }
 
-#menu * {
+#menu.fechado * {
   transform: translateX(-20vw);
 }
 
@@ -48,6 +48,16 @@
   font-variation-settings: 'FILL' 1;
 }
 
+#menu-lista .item:hover {
+  color: var(--cor01);
+  border-left: solid 1vw;
+}
+
+#menu-lista .item.selecionado {
+  color: var(--cor01);
+  border-left: solid 2vw;
+}
+
 /* Btn reportar bugs*/
 #reportar-erro {
   display: flex;
@@ -78,12 +88,19 @@
   transform: scale(1.1);
 }
 
-#menu-lista .item:hover {
-  color: var(--cor01);
-  border-left: solid 1vw white;
-}
-
-#menu-lista .item.selecionado {
-  color: var(--cor01);
-  border-left: solid .5vw;
+@media screen and (max-width:425px) {
+  #menu.fechado {
+    position: absolute;
+    top: 10vh;
+    width: 90vw;
+    bottom: 0;
+    left: -90vw;
+  }
+  #menu.aberto {
+    position: absolute;
+    width: 90vw;
+    top: 10vh;
+    bottom: 0;
+    left: 0;
+  }
 }

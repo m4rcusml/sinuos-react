@@ -8,7 +8,7 @@ const Menu = () => {
   }
 
   return (
-    <nav id="menu">
+    <nav id="menu" className="fechado">
       <div id="menu-lista">
         <MenuButton
           link="/"

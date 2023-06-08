@@ -19,42 +19,6 @@ main::-webkit-scrollbar-thumb {
 }
 
 @media screen and (max-width:425px) {
-  #menu {
-    position: absolute;
-    width: 100vw;
-    left: 0;
-    right: 0;
-    top: -100vh;
-    bottom: auto;
-    transition: none;
-  }
-
-  #menu * {
-    top: -100vh;
-    transition: none;
-  }
-
-  #menu.aberto {
-    top: 10vh;
-    transition: none;
-  }
-
-  #menu.aberto * {
-    top: 10vh;
-    transition: none;
-  }
-
-  #menu-lista .item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #menu-lista .item.selecionado {
-    border: none;
-    font-weight: bold;
-  }
-
   #rodape {
     display: flex;
     flex-direction: column;
