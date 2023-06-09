@@ -1,14 +1,17 @@
+import { Link } from "react-router-dom"
+
 const MenuButton = ({ link, icon, text }) => {
-
-  const isSelected = window.location.href.endsWith(link)
-
+  
   return (
-    <a href={link} className={`item ${isSelected && 'selecionado'}`}>
+    <Link 
+      to={link} 
+      className={`item`}
+    >
       <span className="material-symbols-outlined">
         {icon}
       </span>
       {text}
-    </a>
+    </Link>
   )
 }
 

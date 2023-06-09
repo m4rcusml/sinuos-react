@@ -11,17 +11,17 @@ const Menu = () => {
     <nav id="menu" className="fechado">
       <div id="menu-lista">
         <MenuButton
-          link="/"
+          link=""
           icon="home"
           text="Início"
         />
         <MenuButton
-          link="/graficos"
+          link="graficos"
           icon="show_chart"
           text="Gráficos"
         />
         <MenuButton
-          link="/desenvolvedores"
+          link="desenvolvedores"
           icon="groups"
           text="Desenvolvedores"
         />
