@@ -1,4 +1,4 @@
-import './Navegacao.css'
+import './styles/Navegacao.css'
 
 const Cima = () => {
   return (

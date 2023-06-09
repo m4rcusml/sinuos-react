@@ -1,5 +1,5 @@
 import Navegacao from '../components/Navegacao'
-import './Inicio.css'
+import './styles/Inicio.css'
 
 const Inicio = () => {
   return (

@@ -1,5 +1,5 @@
 import sinuosBanner from '../assets/imgs/sinuos-banner.jpeg'
-import './SinuosBanner.css'
+import './styles/SinuosBanner.css'
 
 const SinuosBanner = () => {
   return (

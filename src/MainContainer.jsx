@@ -1,8 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import SinuosBanner from "./components/SinuosBanner"
 import Footer from './components/Footer'
-import './MainContainer.css'
+import './styles/MainContainer.css'
 import Inicio from "./pages/Inicio"
+import Desenvolvedores from "./pages/Desenvolvedores"
+import Graficos from './pages/Graficos'
 
 const MainContainer = () => {
 
@@ -12,6 +14,8 @@ const MainContainer = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Inicio />} />
+          <Route path="/graficos" element={<Graficos />} />
+          <Route path="/desenvolvedores" element={<Desenvolvedores />} />
         </Routes>
       </BrowserRouter>
       <Footer />

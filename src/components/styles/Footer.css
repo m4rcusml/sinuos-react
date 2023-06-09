@@ -60,3 +60,12 @@
   justify-content: center;
   align-items: center;
 }
+
+@media screen and (max-width:425px) {
+  #rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+  }
+}

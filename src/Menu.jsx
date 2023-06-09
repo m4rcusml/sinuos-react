@@ -1,5 +1,5 @@
 import MenuButton from './components/MenuButton'
-import './Menu.css'
+import './styles/Menu.css'
 
 const Menu = () => {
 
