@@ -9,9 +9,19 @@ import Graficos from './pages/Graficos'
 import Desenvolvedores from './pages/Desenvolvedores'
 import Footer from './components/Footer'
 import SinuosBanner from './components/SinuosBanner'
+import styled from 'styled-components'
 
 import './styles/MainContainer.css'
 import './styles/main.css'
+
+const NotFound = styled.h1`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 0;
+  color: var(--cor01);
+  text-align: center;
+`
 
 /* Renderização da aplicação */
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -25,7 +35,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="" element={<Inicio />} />
           <Route path="graficos" element={<Graficos />} />
           <Route path="desenvolvedores" element={<Desenvolvedores />} />
-          <Route path="*" element={<h1>Página não encontrada! </h1>} />
+          <Route path="*" element={<NotFound>Página não encontrada! </NotFound>} />
         </Routes>
         <Footer />
       </main>
