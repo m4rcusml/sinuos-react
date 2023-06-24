@@ -30,7 +30,7 @@ const Header = () => {
         </span>
       </button>
 
-      <a href="login" id="account-button" className="clicado">
+      <a href="./login" id="account-button" className="clicado">
         <span className="material-symbols-outlined">
           account_circle
         </span>
