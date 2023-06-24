@@ -52,7 +52,7 @@ const Inicio = () => {
             <img src="" alt="" />
           </div>
           <div className="article-info">
-            <Link href="desenvolvedores" className="titulo">Quem forma nossa equipe</Link>
+            <Link to="desenvolvedores" className="titulo">Quem forma nossa equipe</Link>
             <div className="texto">
               <ul>
                 <li>Mecatrônca:</li>
