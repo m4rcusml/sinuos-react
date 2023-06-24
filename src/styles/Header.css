@@ -10,10 +10,11 @@
   box-shadow: 0 2px 2vh #000000b3;
 }
 
-#cabecalho button {
+#cabecalho button, #cabecalho a {
   cursor: pointer;
   outline: none;
   border: none;
+  text-decoration: none;
   background-color: transparent;
   color: white;
   display: flex;

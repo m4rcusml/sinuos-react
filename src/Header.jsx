@@ -30,11 +30,11 @@ const Header = () => {
         </span>
       </button>
 
-      <button id="account-button" className="clicado">
+      <a href="login" id="account-button" className="clicado">
         <span className="material-symbols-outlined">
           account_circle
         </span>
-      </button>
+      </a>
 
     </header>
   )
