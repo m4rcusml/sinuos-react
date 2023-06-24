@@ -1,4 +1,5 @@
 import Navegacao from '../components/Navegacao'
+import { Link } from 'react-router-dom'
 import './styles/Inicio.css'
 
 const Inicio = () => {
@@ -51,7 +52,7 @@ const Inicio = () => {
             <img src="" alt="" />
           </div>
           <div className="article-info">
-            <a href="desenvolvedores.html" className="titulo">Quem forma nossa equipe</a>
+            <Link href="desenvolvedores" className="titulo">Quem forma nossa equipe</Link>
             <div className="texto">
               <ul>
                 <li>Mecatrônca:</li>
