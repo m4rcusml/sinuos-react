@@ -16,8 +16,8 @@ import './styles/MainContainer.css'
 import './styles/main.css'
 
 const NotFoundStyled = styled.div`
-  width: 100vw;
-  height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,7 +51,6 @@ const App = () => {
   )
 }
 
-/* Renderização da aplicação */
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
@@ -60,7 +59,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="" element={<Inicio />} />
           <Route path="graficos" element={<Graficos />} />
           <Route path="desenvolvedores" element={<Desenvolvedores />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
+
         <Route path='login' element={<Login />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
