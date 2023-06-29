@@ -1,5 +1,8 @@
 import Navegacao from '../components/Navegacao'
 import { Link } from 'react-router-dom'
+import img01 from '../assets/imgs/artigos/img01.jpeg'
+import img02 from '../assets/imgs/artigos/img02.jpg'
+import img03 from '../assets/imgs/sinuos-dark-banner.jpeg'
 import './styles/Inicio.css'
 
 const Inicio = () => {
@@ -10,7 +13,7 @@ const Inicio = () => {
       <section id="articles-lista">
         <article className="article">
           <div className="article-imagem">
-            <img src="" alt="" />
+            <img src={img01} alt="" />
           </div>
           <div className="article-info">
             <a href="#" className="titulo">A problemática da água</a>
@@ -27,7 +30,7 @@ const Inicio = () => {
 
         <article className="article">
           <div className="article-imagem">
-            <img src="" alt="" />
+            <img src={img02} alt="" />
           </div>
           <div className="article-info">
             <a href="#" className="titulo">O que o este projeto pretende fazer</a>
@@ -48,8 +51,8 @@ const Inicio = () => {
         </article>
 
         <article className="article">
-          <div className="article-imagem">
-            <img src="" alt="" />
+          <div className="article-imagem" style={{backgroundColor: 'var(--cor01)'}}>
+            <img src={img03} alt="" style={{width: 'auto'}}/>
           </div>
           <div className="article-info">
             <Link to="desenvolvedores" className="titulo">Quem forma nossa equipe</Link>

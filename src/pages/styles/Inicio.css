@@ -21,7 +21,15 @@ section {
   background-color: gray;
   border-radius: 1em;
   overflow: hidden;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-imagem img {
+  height: 100%;
+  width: 100%;
 }
 
 .article-info {
@@ -33,6 +41,7 @@ section {
 
 .article-info .titulo {
   font-size: max(2.4rem, 1.2vw);
+  color: blue;
 }
 
 .article-info .texto {

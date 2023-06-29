@@ -96,7 +96,7 @@
   transform: scale(1.1);
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:768px) {
   #menu.fechado {
     position: absolute;
     top: 10vh;
@@ -107,7 +107,7 @@
 
   #menu.aberto {
     position: absolute;
-    width: 90vw;
+    width: 40vw;
     top: 10vh;
     bottom: 0;
     left: 0;
@@ -127,4 +127,10 @@
     color: var(--cor01);
     border-left: solid 2vw;
   } */
+}
+
+@media screen and (max-width: 425px) {
+  #menu.aberto {
+    width: 75vw;
+  }
 }

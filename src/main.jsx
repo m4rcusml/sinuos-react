@@ -16,6 +16,8 @@ import './styles/MainContainer.css'
 import './styles/main.css'
 
 const NotFoundStyled = styled.div`
+  width: 100%;
+  height: 100%;
   max-width: 100vw;
   max-height: 100vh;
   display: flex;
@@ -28,11 +30,16 @@ const NotFoundStyled = styled.div`
   text-align: center;
 `
 
-const NotFound = () => {
+const NotFound = ({fullscreen = false}) => {
   return (
-    <NotFoundStyled>
+    <NotFoundStyled 
+      style={{
+        width: fullscreen && '100vw',
+        height: fullscreen && '100vh'
+      }}
+    >
       <h1>Página não encontrada!</h1>
-      <Link to="">Voltar para página inicial</Link>
+      <Link to={fullscreen ? 'home' : ''}>Voltar para página inicial</Link>
     </NotFoundStyled>
   )
 }
@@ -55,16 +62,19 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="" element={<App />}>
-          <Route path="" element={<Inicio />} />
-          <Route path="graficos" element={<Graficos />} />
-          <Route path="desenvolvedores" element={<Desenvolvedores />} />
-          <Route path="*" element={<NotFound />} />
-        </Route>
+        <Route path="/">
+          <Route path='' element={<Login />} />
+          
+          <Route path='home' element={<App />}>
+            <Route path="" element={<Inicio />} />
+            <Route path="graficos" element={<Graficos />} />
+            <Route path="desenvolvedores" element={<Desenvolvedores />} />
+            <Route path="*" element={<NotFound />} />
+          </Route>
 
-        <Route path='login' element={<Login />} />
-        <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<NotFound fullscreen={true} />} />
+        </Route>
       </Routes>
     </BrowserRouter>
-  </React.StrictMode>
+  </React.StrictMode >
 )

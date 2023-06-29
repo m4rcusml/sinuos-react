@@ -70,6 +70,7 @@ const LoginStyled = styled.div`
     padding: 1rem 0;
     border: 1px solid var(--cor02);
     border-radius: 1em;
+    margin-bottom: 1em;
     display: flex;
     transition: all 200ms;
   }
@@ -89,6 +90,9 @@ const LoginStyled = styled.div`
   form #sem-conta {
     display: inline-block;
     margin: 1em 0 .4rem 0;
+  }
+  form button#btn-visitante {
+    margin-bottom: 0;
   }
 
   @media screen and (max-width: 600px) {
@@ -123,18 +127,21 @@ function Login() {
           <h3>Login</h3>
           <div className='campo'>
             <label htmlFor="login">Login:</label>
-            <input type="text" id='login' />
+            <input type="text" id='login' required />
           </div>
           <div className='campo'>
             <label htmlFor="senha">Senha:</label>
-            <input type="password" id='senha' />
+            <input type="password" id='senha' required />
           </div>
           <div className="checkbox">
             <input type="checkbox" id='lembrar' />
             <label htmlFor="lembrar">Lembrar</label>
           </div>
           <button type="button">
-            <a href="./">Continuar</a>
+            <a href="home">Continuar</a>
+          </button>
+          <button type="button" id='btn-visitante'>
+            <a href="home">Continuar como visitante</a>
           </button>
           <a href="cadastro" id="sem-conta">Ainda não tem uma conta?</a>
         </div>
