@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import SinuosBanner from '../components/SinuosBanner'
 import styled from "styled-components"
 
@@ -137,13 +138,13 @@ function Login() {
             <input type="checkbox" id='lembrar' />
             <label htmlFor="lembrar">Lembrar</label>
           </div>
-          <button type="button">
-            <a href="home">Continuar</a>
+          <button type="submit">
+            <Link to="">Continuar</Link>
           </button>
           <button type="button" id='btn-visitante'>
-            <a href="home">Continuar como visitante</a>
+            <Link to="home">Continuar como visitante</Link>
           </button>
-          <a href="cadastro" id="sem-conta">Ainda não tem uma conta?</a>
+          <Link to="cadastro" id="sem-conta">Ainda não tem uma conta?</Link>
         </div>
       </form>
     </LoginStyled>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './styles/Header.css'
 
 const Header = () => {
@@ -30,11 +31,11 @@ const Header = () => {
         </span>
       </button>
 
-      <a href="../" id="account-button" className="clicado">
+      <Link to="../" id="account-button" className="clicado">
         <span className="material-symbols-outlined">
           account_circle
         </span>
-      </a>
+      </Link>
 
     </header>
   )
