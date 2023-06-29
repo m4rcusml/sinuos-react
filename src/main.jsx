@@ -68,10 +68,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="/home" element={<Inicio />} />
           <Route path="/home/graficos" element={<Graficos />} />
           <Route path="/home/desenvolvedores" element={<Desenvolvedores />} />
-          {/* <Route path="/home/*" element={<NotFound />} /> */}
+          <Route path="/home/*" element={<NotFound />} />
         </Route>
 
-        {/* <Route path="/*" element={<NotFound fullscreen={true} />} /> */}
+        <Route path="/*" element={<NotFound fullscreen={true} />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode >
