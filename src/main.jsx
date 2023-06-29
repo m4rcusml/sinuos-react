@@ -30,9 +30,9 @@ const NotFoundStyled = styled.div`
   text-align: center;
 `
 
-const NotFound = ({fullscreen = false}) => {
+const NotFound = ({ fullscreen = false }) => {
   return (
-    <NotFoundStyled 
+    <NotFoundStyled
       style={{
         width: fullscreen && '100vw',
         height: fullscreen && '100vh'
@@ -62,18 +62,16 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="">
-          <Route path='' element={<Login />} />
-          
-          <Route path='home' element={<App />}>
-            <Route path="" element={<Inicio />} />
-            <Route path="graficos" element={<Graficos />} />
-            <Route path="desenvolvedores" element={<Desenvolvedores />} />
-            <Route path="*" element={<NotFound />} />
-          </Route>
+        <Route path="/" element={<Login />} />
 
-          <Route path="*" element={<NotFound fullscreen={true} />} />
+        <Route path="/home" element={<App />}>
+          <Route path="/home" element={<Inicio />} />
+          <Route path="/home/graficos" element={<Graficos />} />
+          <Route path="/home/desenvolvedores" element={<Desenvolvedores />} />
+          <Route path="/home/*" element={<NotFound />} />
         </Route>
+
+        <Route path="/*" element={<NotFound fullscreen={true} />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode >
