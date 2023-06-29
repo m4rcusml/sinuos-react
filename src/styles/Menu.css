@@ -10,7 +10,7 @@
   transition: all 200ms;
 }
 
-#menu.fechado * {
+#menu * {
   transform: translateX(-20vw);
 }
 
@@ -97,7 +97,7 @@
 }
 
 @media screen and (max-width:768px) {
-  #menu.fechado {
+  #menu {
     position: absolute;
     top: 10vh;
     width: 90vw;

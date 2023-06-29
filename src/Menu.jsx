@@ -5,11 +5,12 @@ import './styles/Menu.css'
 const Menu = () => {
 
   function reportarErro() {
-    alert('Reportando erro...')
+    prompt('Diga-nos o que está acontecendo:')
+    setTimeout(() => alert('Erro reportado com sucesso.'), 800)
   }
 
   return (
-    <nav id="menu" className="fechado">
+    <nav id="menu">
       <div id="menu-lista">
         <MenuButton
           link=""

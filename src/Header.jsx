@@ -11,7 +11,6 @@ const Header = () => {
 
   function abrirFecharMenu() {
     document.querySelector('#menu').classList.toggle('aberto')
-    document.querySelector('#menu').classList.toggle('fechado')
     if (document.querySelector('#menu').classList.contains('aberto')) {
       if (getResolucao() > 768) {
         document.querySelector('#root').style.gridTemplateColumns = '20vw 1fr'

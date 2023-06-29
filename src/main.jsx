@@ -1,15 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter, Routes, Route, Outlet, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
-import Header from './Header'
-import Menu from './Menu'
+import App from './App'
 import Inicio from './pages/Inicio'
 import Graficos from './pages/Graficos'
 import Desenvolvedores from './pages/Desenvolvedores'
 import Login from './pages/Login'
-import Footer from './components/Footer'
-import SinuosBanner from './components/SinuosBanner'
 import styled from 'styled-components'
 
 import './styles/MainContainer.css'
@@ -41,20 +38,6 @@ const NotFound = ({ fullscreen = false }) => {
       <h1>Página não encontrada!</h1>
       <Link to={fullscreen ? 'home' : ''}>Voltar para página inicial</Link>
     </NotFoundStyled>
-  )
-}
-
-const App = () => {
-  return (
-    <>
-      <Header />
-      <Menu />
-      <main>
-        <SinuosBanner />
-        <Outlet />
-        <Footer />
-      </main>
-    </>
   )
 }
 
