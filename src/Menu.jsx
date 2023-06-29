@@ -1,3 +1,4 @@
+import React from 'react'
 import MenuButton from './components/MenuButton'
 import './styles/Menu.css'
 

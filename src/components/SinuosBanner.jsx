@@ -1,3 +1,4 @@
+import React from 'react'
 import sinuosBanner from '../assets/imgs/sinuos-banner.jpeg'
 import './styles/SinuosBanner.css'
 

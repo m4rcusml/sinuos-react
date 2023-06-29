@@ -1,3 +1,4 @@
+import React from 'react'
 import CardDesenvolvedor from '../components/CardDesenvolvedor'
 import Carlos from '../assets/imgs/desenvolvedores/Carlos.jpeg'
 import Davi from '../assets/imgs/desenvolvedores/Davi.jpeg'

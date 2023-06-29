@@ -1,3 +1,5 @@
+import React from 'react'
+
 const CardDesenvolvedor = ({nome, turma, cargo, imagemUrl}) => {
   return (
     <div className="item">

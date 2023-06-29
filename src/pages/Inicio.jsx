@@ -1,3 +1,4 @@
+import React from 'react'
 import Navegacao from '../components/Navegacao'
 import { Link } from 'react-router-dom'
 import img01 from '../assets/imgs/artigos/img01.jpeg'

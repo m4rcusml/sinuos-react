@@ -1,3 +1,4 @@
+import React from 'react'
 import { Link } from 'react-router-dom'
 import SinuosBanner from '../components/SinuosBanner'
 import styled from "styled-components"
