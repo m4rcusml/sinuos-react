@@ -62,17 +62,17 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/">
-          <Route path='' element={<Login />} />
+        <Route path="./">
+          <Route path='./' element={<Login />} />
           
-          <Route path='home' element={<App />}>
-            <Route path="" element={<Inicio />} />
-            <Route path="graficos" element={<Graficos />} />
-            <Route path="desenvolvedores" element={<Desenvolvedores />} />
-            <Route path="*" element={<NotFound />} />
+          <Route path='./home' element={<App />}>
+            <Route path="./" element={<Inicio />} />
+            <Route path="./graficos" element={<Graficos />} />
+            <Route path="./desenvolvedores" element={<Desenvolvedores />} />
+            <Route path="./*" element={<NotFound />} />
           </Route>
 
-          <Route path="*" element={<NotFound fullscreen={true} />} />
+          <Route path="./*" element={<NotFound fullscreen={true} />} />
         </Route>
       </Routes>
     </BrowserRouter>
