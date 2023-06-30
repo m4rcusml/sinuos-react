@@ -77,7 +77,7 @@ const Inicio = () => {
         <h2 className="titulo">Disposição dos rios da cidade</h2>
 
         <div id="mapa-container">
-          <iframe src="https://linkquebrado.com"
+          <iframe src="https://www.google.com/maps/d/embed?mid=1u4hhyYTja7YUsPgXzH65P6WP3RPYayQ&hl=pt-BR&ehbc=2E312F"
             width="640" height="480">
           </iframe>
         </div>
